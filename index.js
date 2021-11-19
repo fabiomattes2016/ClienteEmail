@@ -4,18 +4,18 @@ const nodemailer = require("nodemailer");
 
 async function main() {
   let transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
+    host: "",
     port: 587,
     secure: false,
-    requireTLC: true,
+    requireTLC: false,
     auth: {
-      user: "ottohxtestesdev@gmail.com",
-      pass: "Otto2021*",
+      user: "",
+      pass: "",
     },
   });
 
   let info = await transporter.sendMail({
-    from: '"Fábio Mattes 👻" <ottohxtestesdev@gmail.com>',
+    from: '"Fábio Mattes 👻" <>',
     to: "aabettio@gmail.com, fabiomattes2007@gmail.com",
     subject: "E-mail de teste para STJ",
     text: "Olá STJ",
