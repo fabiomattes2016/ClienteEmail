@@ -5,11 +5,11 @@ const nodemailer = require("nodemailer");
 async function main() {
   let transporter = nodemailer.createTransport({
     host: "",
-    port: 587,
-    secure: false,
-    requireTLC: false,
+    port: 25,
+    secure: false, // disbilita segurança
+    requireTLC: false, // disabilita TLC
     tls: {
-      rejectUnauthorized: false,
+      rejectUnauthorized: false, // disabilita verificação TLS
     },
     auth: {
       user: "",
