@@ -8,6 +8,9 @@ async function main() {
     port: 587,
     secure: false,
     requireTLC: false,
+    tls: {
+      rejectUnauthorized: false,
+    },
     auth: {
       user: "",
       pass: "",
