@@ -6,10 +6,10 @@ async function main() {
   let transporter = nodemailer.createTransport({
     host: "",
     port: 25,
-    secure: false, // disbilita segurança
-    requireTLC: false, // disabilita TLC
+    secure: false, // desabilita segurança
+    requireTLC: false, // desabilita TLC
     tls: {
-      rejectUnauthorized: false, // disabilita verificação TLS
+      rejectUnauthorized: false, // desabilita verificação TLS
     },
     auth: {
       user: "",
